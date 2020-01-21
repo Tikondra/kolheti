@@ -1,0 +1,36 @@
+.header {
+  background-image: url("../img/back-header.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.header__wrapper {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  padding: 10px 9px 15px;
+}
+
+.header__contacts {
+  margin: 0 auto 0 10px;
+}
+
+.header__adress {
+  margin: 3px 0;
+  font-size: 16px;
+  font-weight: 100;
+  color: #ffffff;
+}
+
+.header__tel {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .header__tel {
+    font-size: 20px;
+  }
+}

@@ -1,94 +1,38 @@
-.navigation__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.navigation__link {
-  display: block;
-  color: #192144;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  overflow: hidden;
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.navigation__span {
+.navigation__btn {
   position: relative;
-  display: inline-block;
-  transition: transform 0.3s;
+  width: 38px;
+  height: 3px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 3px;
 
+  &::after,
   &::before {
+    content: "";
     position: absolute;
-    top: 100%;
-    content: attr(data-hover);
-    font-weight: 700;
-    transform: translate3d(0, 0, 0);
+    top: 10px;
+    left: 0;
+    width: 38px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: 0.3s ease;
   }
-}
 
-@media (min-width: $tablet) {
-  .navigation__link {
-    font-size: 60px;
-    line-height: 71.01px;
-    text-align: left;
-    letter-spacing: -0.7px;
+  &:before {
+    top: -10px;
   }
-}
 
-@media (min-width: $desktop) {
-  .navigation__list {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 750px;
+  &--active {
+    background-color: transparent;
+
+    &::after {
+      transform: rotate(45deg) translate(-4px, -4px);
+    }
 
     &::before {
-      content: "";
-      display: block;
-      width: 60px;
-      height: 2px;
-      margin-top: 3px;
-      margin-right: 6%;
-      border-radius: 1px;
-      background-color: #ffffff;
-    }
-
-    &--scroll {
-      .navigation__link {
-        color: #161c35;
-      }
-
-      &::before {
-        width: 45px;
-        margin: 0 45px 0 14px;
-        background-color: #161c35;
-      }
-    }
-  }
-
-  .navigation__item {
-    margin-right: 2.5%;
-  }
-
-  .navigation__link {
-    padding-top: 4px;
-    padding-right: 16px;
-    color: #ffffff;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: -0.1px;
-
-    &:hover .navigation__span {
-      color: #ffd74b;
-      transform: translateY(-100%);
+      transform: rotate(-45deg) translate(-10px, 10px);
     }
   }
 }
