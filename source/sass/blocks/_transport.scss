@@ -1,0 +1,95 @@
+.transport {
+  @include list;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+
+  &--demin {
+    padding-right: 4px;
+    width: 52%;
+  }
+}
+
+.transport__item {
+
+  margin-right: 17px;
+  height: 27px;
+
+  &--bus {
+    margin-right: 13px;
+  }
+
+  &--bike {
+    margin-right: 10px;
+  }
+}
+
+.transport__svg {
+  opacity: 0.15;
+  fill: #1d2e5b;
+
+  &--active {
+    opacity: 1;
+  }
+}
+
+@media (min-width: $tablet) {
+  .transport {
+    width: 46.6%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .transport {
+    width: 47%;
+  }
+
+  .transport__item {
+    position: relative;
+
+    &[data-hover] {
+      &::before {
+        content: attr(data-hover);
+        position: absolute;
+        z-index: 5;
+        top: 138%;
+        left: 50%;
+        display: none;
+        padding: 16px 24px 17px 24px;
+        color: #ffffff;
+        white-space: nowrap;
+        font-size: 20px;
+        line-height: 24px;
+        background-color: #101d41;
+        border-radius: 3px;
+        transform: translateX(-50%);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 5;
+        left: 50%;
+        display: none;
+        width: 0;
+        height: 0;
+
+        border: 8px solid #101d41;
+        border-right-width: 0;
+        border-top-color: transparent;
+        border-top-width: 8px;
+        border-bottom-color: transparent;
+        border-bottom-width: 8px;
+        transform: translateX(-50%) rotate(-90deg);
+      }
+
+      &:hover {
+        &::before,
+        &::after {
+          display: block;
+        }
+      }
+    }
+  }
+}

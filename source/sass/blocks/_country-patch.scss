@@ -1,0 +1,59 @@
+.country-patch {
+  @include list;
+  width: 100%;
+  padding: 30px 25px 14px;
+}
+
+.country-patch__link {
+  opacity: 0.3;
+  color: #192144;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &--active {
+    opacity: 1;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.country-patch__item {
+  margin-bottom: 5px;
+}
+
+@media (min-width: $tablet) {
+  .country-patch {
+    display: flex;
+    padding: 0;
+    width: 65%;
+  }
+
+  .country-patch__item {
+    margin-right: 26px;
+
+    &--dop {
+      margin: 0 30px 0 2px;
+    }
+  }
+
+  .country-patch__link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .country-patch {
+    padding: 1px 0 0 0;
+    width: 50%;
+  }
+}

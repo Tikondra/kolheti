@@ -1,0 +1,135 @@
+.location {
+  position: relative;
+  z-index: 3;
+  margin-top: -30px;
+  padding: 47px 25px 35px;
+  border-radius: 0 0 30px 30px;
+  background-color: #ffd74b;
+}
+
+.location__address {
+  display: flex;
+  align-items: center;
+  color: #192144;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.location__btn {
+  margin-top: 16px;
+  padding: 19px 20px;
+  border: 3px solid #192144;
+
+  &:hover {
+    background-color: #192144;
+
+    span {
+      color: #ffffff;
+      background-image: url("../img/triangle-arrow-right-w.svg");
+    }
+  }
+}
+
+.location__pin {
+  @include center-flex;
+  padding: 4px 0 0 1px;
+  width: 45px;
+  height: 45px;
+  margin-right: 16px;
+  margin-bottom: 1px;
+  background-color: #121936;
+  border-radius: 50%;
+}
+
+.location__svg {
+  fill: #ffd74b;
+}
+
+.location__address-text {
+  display: block;
+  max-width: 145px;
+}
+
+@media (min-width: $tablet) {
+  .location {
+    margin-top: -60px;
+    padding: 100px 0 85px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .location__content {
+    display: flex;
+    flex-direction: column;
+    width: 80.5%;
+    margin: auto;
+  }
+
+  .location__pin {
+    width: 68px;
+    height: 68px;
+    margin-right: 25px;
+    padding: 4px 0 0 0;
+  }
+
+  .location__svg {
+    width: 21px;
+    height: 32px;
+  }
+
+  .location__address-text {
+    padding-top: 0;
+    max-width: 100%;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .location__btn {
+    margin-top: 35px;
+    padding: 24px 33px 25px;
+
+    span {
+      background-position: right top 4px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .location {
+    padding: 0;
+  }
+
+  .location__content {
+    max-width: 1440px;
+    margin: auto;
+    padding: 114px 134px 55px 283px;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .location__btn {
+    margin-left: auto;
+    margin-top: 5px;
+    width: 100%;
+    max-width: 324px;
+  }
+
+  .location__pin {
+    width: 90px;
+    height: 90px;
+    padding-top: 5px;
+    margin-right: 31px;
+  }
+
+  .location__svg {
+    width: 28px;
+    height: 43px;
+  }
+
+  .location__address-text {
+    padding-top: 0;
+    margin: 22px 0 26px;
+  }
+}

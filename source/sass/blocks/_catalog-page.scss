@@ -1,0 +1,133 @@
+.catalog-page__title-box {
+  padding: 90.5px 25px 0;
+  border-radius: 0 0 20px 20px;
+  background-color: #161c35;
+}
+
+.catalog-page__link-home {
+  display: none;
+}
+
+.catalog-page__title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-bottom: 0;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+
+
+  &::after {
+    content: "";
+    position: relative;
+    top: 2px;
+    z-index: 6;
+    width: 173px;
+    height: 5px;
+    margin-top: 7px;
+    border-radius: 2px;
+    background-color: #ff8d30;
+  }
+}
+
+.catalog-page__content {
+  padding: 24px 25px 46px;
+  margin-top: 52px;
+}
+
+.catalog-page__select-travelmates {
+  margin-bottom: 28px;
+}
+
+@media (min-width: $tablet) {
+  .catalog-page__content {
+    padding: 46px 40px 62px;
+    margin-top: 136px;
+  }
+
+  .catalog-page__title-box {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 42px;
+    padding: 93px 25px 0;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .catalog-page__title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 121px 50px 0 49px;
+  }
+
+  .catalog-page__link-home {
+    display: block;
+    padding-right: 61px;
+    padding-bottom: 58px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-image: url("../img/return.svg");
+    background-repeat: no-repeat;
+    background-position: top 3px right;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .catalog-page__title {
+    font-size: 60px;
+    line-height: 70px;
+
+    &::after {
+      width: 285px;
+      height: 8px;
+      top: 4px;
+      left: 3px;
+      margin-top: 59px;
+    }
+  }
+
+  .catalog-page__filter-country {
+    padding-top: 100px;
+    margin-top: -100px;
+    position: relative;
+    z-index: 9;
+  }
+
+  .catalog-page__select-travelmates {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog-page__title-container {
+    max-width: 1440px;
+    margin: auto;
+    padding-left: 101px;
+    padding-right: 98px;
+  }
+
+  .catalog-page__content {
+    max-width: 1440px;
+    margin: auto;
+    padding: 77px 60px 77px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .catalog-page__select-travelmates {
+    order: 1;
+  }
+}
