@@ -1,10 +1,8 @@
-.navigation__btn {
-  position: relative;
+.navigation__btn-cont {
+  position: absolute;
   width: 38px;
   height: 3px;
   background-color: #ffffff;
-  border: none;
-  outline: none;
   border-radius: 3px;
 
   &::after,
@@ -15,24 +13,34 @@
     left: 0;
     width: 38px;
     height: 3px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 3px;
     transition: 0.3s ease;
   }
 
-  &:before {
+  &::before {
     top: -10px;
   }
+}
 
-  &--active {
+.navigation__btn {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+
+  &--active .navigation__btn-cont {
     background-color: transparent;
+  }
 
-    &::after {
-      transform: rotate(45deg) translate(-4px, -4px);
-    }
+  &--active .navigation__btn-cont::after {
+    transform: rotate(45deg) translate(-4px, -4px);
+  }
 
-    &::before {
-      transform: rotate(-45deg) translate(-10px, 10px);
-    }
+  &--active .navigation__btn-cont::before {
+    transform: rotate(-45deg) translate(-10px, 10px);
   }
 }
