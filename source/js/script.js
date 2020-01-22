@@ -15,3 +15,10 @@ $(document).ready(function(){
     nav: true
   });
 });
+
+if (document.querySelector('.recommend__list')) {
+  var list = document.querySelector('.recommend__list');
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    list.classList.remove('owl-carousel');
+  }
+}
