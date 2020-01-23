@@ -97,3 +97,17 @@
     padding: 25px;
   }
 }
+
+@media (min-width: 1024px) {
+  .recommend {
+    padding: 60px 25px;
+  }
+
+  .recommend__btn {
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

@@ -8,4 +8,8 @@
   text-align: center;
   background-image: linear-gradient(to top, #e1c870, #e6a635);
   border-radius: 30px;
+
+  &:hover {
+    background-image: linear-gradient(to top, #ecc640,#de5f04);
+  }
 }

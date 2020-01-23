@@ -23,29 +23,52 @@
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  color: #ffffff;
+
+  &:focus {
+    border-color: rgba(255, 255, 255, 1);
+  }
 }
 
 .form__btn {
+  width: 100%;
+  max-width: none;
   border: none;
-  margin: 25px auto 10px;
+  margin: 25px auto;
 }
 
 .form__privacy {
   display: flex;
   align-items: center;
   margin: auto;
-  font-size: 12px;
+  font-size: 10px;
   max-width: 300px;
+
+  input {
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form__fieldset {
+    padding: .35em 2.5em 1.3em;
+  }
+
+  .form__text {
+    padding: 0 60px;
+    margin: 0 0 30px;
+  }
 }
 
 @media (min-width: 1024px) {
-  .form__text {
-    padding: 0 85px;
-    margin: 0 0 30px;
-  }
-
   .form__input {
     padding: 10px;
     margin-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+
+    &:hover {
+      border-color: #ffffff;
+    }
   }
 }
