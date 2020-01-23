@@ -1,8 +1,20 @@
 function menu() {
   var btn = document.querySelector('.navigation__btn');
+  var menu = document.querySelector('.navigation__list');
 
   btn.addEventListener('click', function() {
-    btn.classList.toggle('navigation__btn--active');
+
+    if (btn.classList.contains('navigation__btn--active')) {
+      btn.classList.remove('navigation__btn--active');
+      menu.classList.add('PushRight');
+      menu.classList.remove('PullRight');
+
+    } else {
+
+      btn.classList.add('navigation__btn--active');
+      menu.classList.add('PullRight');
+      menu.classList.add('navigation__list--active');
+    }
   });
 }
 

@@ -35,6 +35,11 @@
   margin: 0 0 0 10px;
 }
 
+.header__logo-box,
+.header__logo {
+  z-index: 5;
+}
+
 @media (min-width: 425px) {
   .header__contacts {
     margin: 5px auto 0 40px;

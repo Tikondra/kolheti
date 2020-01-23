@@ -25,6 +25,7 @@
 
 .navigation__btn {
   position: relative;
+  z-index: 2;
   width: 38px;
   height: 38px;
   padding: 0;
@@ -43,4 +44,56 @@
   &--active .navigation__btn-cont::before {
     transform: rotate(-45deg) translate(-10px, 10px);
   }
+}
+
+.navigation__list {
+  @include list;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  transform-style: preserve-3d;
+  background-image: url("../img/back-header.webp");
+  background-repeat: no-repeat;
+
+  &--active {
+    visibility: visible;
+    z-index: 1;
+  }
+
+  li {
+    margin: 40px 20px 0;
+  }
+
+  a {
+    color: #ffffff;
+  }
+}
+
+.PushRight {
+  transform-origin: 100% 50%;
+  animation: rotatePushRight .8s both ease;
+  animation-delay: .180s;
+}
+
+.PullRight {
+  transform-origin: 100% 50%;
+  animation: rotatePullRight .5s both ease;
+  animation-delay: .180s;
+}
+
+@keyframes rotatePullRight {
+  from { opacity: 0; -webkit-transform: rotateY(-90deg); transform: rotateY(-90deg); }
+}
+
+@keyframes rotatePushRight {
+  from { }
+  to { opacity: 0; -webkit-transform: rotateY(-90deg); transform: rotateY(-90deg); }
 }
