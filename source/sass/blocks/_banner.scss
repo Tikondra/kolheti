@@ -53,7 +53,7 @@
   .banner__content {
     max-width: 1200px;
     margin: auto;
-    padding: 140px 25px 1px;
+    padding: 60px 25px 1px;
     display: flex;
   }
 
@@ -68,5 +68,9 @@
   .banner__img-box {
     max-width: none;
     margin: 20px 0 -50px auto;
+  }
+
+  .banner__content-box {
+    padding-top: 80px;
   }
 }
