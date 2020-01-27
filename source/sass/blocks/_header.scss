@@ -38,6 +38,8 @@
 .header__logo-box,
 .header__logo {
   z-index: 5;
+  min-width: 80px;
+  width: 80px;
 }
 
 @media (min-width: 425px) {
@@ -99,6 +101,13 @@
 
   .header__nav {
     margin: 25px 0 0 50px;
+  }
+
+  .header__logo-box,
+  .header__logo {
+    z-index: 5;
+    min-width: none;
+    width: auto;
   }
 }
 
