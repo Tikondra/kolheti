@@ -1,0 +1,41 @@
+.card {
+  max-width: 270px;
+  margin: 0 10px;
+  min-height: 435px;
+  background-color: #ffffff;
+}
+
+.card__content {
+  padding: 10px;
+}
+
+.card__title {
+  margin-top: 0;
+  min-height: 48px;
+  font-family: "BebasNeue", "Tahoma", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card__sostav {
+  margin: 0;
+  font-weight: 700;
+}
+
+.card__ingridients {
+  margin: 0;
+  min-height: 72px;
+}
+
+.card__price {
+  &--span {
+    font-weight: 700;
+    color: #cf8e17;
+  }
+}
+
+@media (min-width: 768px) {
+  .card__content {
+    padding: 25px;
+  }
+}

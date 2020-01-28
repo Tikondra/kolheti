@@ -25,6 +25,7 @@
   margin: 2px 12px;
   font-size: 14px;
   font-weight: 700;
+  cursor: pointer;
 
   &--active {
     color: #FF9800;
@@ -51,22 +52,23 @@
 @media (min-width: 1024px) {
   .menu {
     margin-top: -55px;
-    padding: 40px 20px;
+    padding: 50px 20px;
+    background-image: url("../img/menu-back2.webp");
   }
 
   .menu__title {
-    margin: 25px 0;
+    margin: 30px 0;
     font-size: 50px;
   }
 
   .menu__list {
     margin: auto;
-    max-width: 850px;
+    max-width: 940px;
   }
 
   .menu__item {
     margin: 3px 15px;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }

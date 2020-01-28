@@ -1,0 +1,21 @@
+.catalog__list {
+  @include list;
+  padding: 20px;
+}
+
+.catalog__title {
+  font-family: "BebasNeue", "Tahoma", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 52px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+  }
+}

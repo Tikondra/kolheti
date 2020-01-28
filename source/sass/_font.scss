@@ -35,6 +35,14 @@
 }
 
 @font-face {
+  font-family: "MuseoSans";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-900.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "BebasNeue";
   font-display: swap;
   src: url("../fonts/BebasNeueBold.woff2") format("woff2"),
