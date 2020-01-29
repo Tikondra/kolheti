@@ -27,10 +27,11 @@
     margin: auto;
     padding: 100px 0;
     display: flex;
+    align-items: center;
   }
 
   .block__content {
-    padding: 25px;
+    padding: 0 25px;
     width: 50%;
   }
 }

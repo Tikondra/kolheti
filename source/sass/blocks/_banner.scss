@@ -1,14 +1,14 @@
 .banner {
   position: relative;
   z-index: 99;
-  margin-top: -55px;
+  padding-top: 100px;
   background-image: url("../img/back-banner.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
 }
 
 .banner__content {
-  padding: 50px 25px 1px;
+  padding: 1px 25px;
 }
 
 .banner__content-box {

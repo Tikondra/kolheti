@@ -88,6 +88,7 @@
   .welcome__content {
     margin-left: 0;
     padding: 0 15px;
+    max-width: 600px;
 
     &::before {
       top: -40px;

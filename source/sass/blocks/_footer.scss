@@ -62,6 +62,7 @@
 .footer__nav-list {
   @include list;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -80,7 +81,13 @@
 }
 
 .footer__copyright {
+  text-align: right;
+}
+
+.footer__quote {
+  max-width: 835px;
   font-size: 16px;
+  line-height: 16px;
   color: #ffffff;
   opacity: 0.7;
 }

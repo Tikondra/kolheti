@@ -1,5 +1,6 @@
 .header {
-  position: relative;
+  position: fixed;
+  width: 100%;
   z-index: 100;
   background-image: url("../img/back-header.png");
   background-repeat: no-repeat;
@@ -113,12 +114,21 @@
     }
   }
 
+  .header__logo-box {
+    grid-area: 1/1/4/2;
+  }
+
+  .header__adress {
+    grid-area: 2/4/3/5;
+    margin-top: 5px;
+  }
+
   .header__tel {
-    margin-top: 30px;
-    grid-area: 1/4/3/5;
+    margin-top: 5px;
+    grid-area: 1/4/2/5;
   }
 
   .header__nav {
-    grid-area: 1/3/3/4;
+    grid-area: 1/2/3/4;
   }
 }

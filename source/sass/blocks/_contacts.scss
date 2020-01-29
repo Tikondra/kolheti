@@ -2,12 +2,11 @@
   color: #ffffff;
   background-image: url("../img/contacts-back.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: bottom center;
 }
 
 .contacts__wrapper {
-  padding: 20px;
-  margin: -20px 0 0;
+  padding: 120px 20px 50px;
 }
 
 .contacts__adress {
@@ -73,11 +72,9 @@
 }
 
 @media (min-width: 768px) {
-
   .contacts__wrapper {
     display: flex;
-    margin-top: -30px;
-    padding: 50px 20px;
+    padding-top: 170px;
   }
 
   .contacts__info {
@@ -100,8 +97,7 @@
     max-width: 1200px;
     margin: auto;
     position: relative;
-    margin-top: -55px;
-    padding: 130px 20px ;
+    padding: 175px 20px;
 
     &::before,
     &::after {
@@ -115,7 +111,7 @@
     }
 
     &::after {
-      bottom: 55px;
+      bottom: 110px;
       right: 0;
       width: 115px;
       height: 115px;
