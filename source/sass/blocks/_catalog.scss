@@ -19,3 +19,9 @@
     margin: auto;
   }
 }
+
+@media (min-width: 1024px) {
+  .catalog__list {
+    padding: 50px 20px;
+  }
+}

@@ -27,7 +27,8 @@
   font-weight: 700;
   cursor: pointer;
 
-  &--active {
+  &--active,
+  &:hover {
     color: #FF9800;
   }
 }
