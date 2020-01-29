@@ -15,17 +15,15 @@
           <source type="image/webp" srcset="img/logo.webp">
           <img class="header__logo" srcset="img/logo.png" width="111" height="111" alt="Колхети">
         </picture>
-        <div class="header__contacts">
-          <p class="header__adress">г. Астрахань, ул.&nbsp;Мечникова,&nbsp;28</p>
-          <a class="header__tel" href="tel:89086116364">8 (908) 611-63-64</a>
-        </div>
+        <p class="header__adress">г. Астрахань, ул.&nbsp;Мечникова,&nbsp;28</p>
+        <a class="header__tel" href="tel:89086116364">8 (908) 611-63-64</a>
         <nav class="header__nav navigation">
           <button class="navigation__btn" type="button">
             <div class="navigation__btn-cont"></div>
           </button>
           <ul class="navigation__list">
             <li>
-              <a>Главная</a>
+              <a>О таверне</a>
             </li>
             <li>
               <a href="menu.html">Меню</a>
@@ -44,8 +42,8 @@
             <h1 class="banner__title">Таверна национальной
               <span class="banner__title--span">грузинской кухни</span>
             </h1>
-            <p class="banner__text">Уютно, вкусно, сытно и недорого — как дома</p>
-            <a class="banner__btn btn" href="#">Забронировать стол</a>
+            <p class="banner__text">Уютно, вкусно, сытно — как дома</p>
+            <a class="banner__btn btn" href="#call">Забронировать стол</a>
           </div>
           <div class="banner__img-box">
             <picture>
@@ -142,7 +140,7 @@
             </div>
           </li>
         </ul>
-        <a class="recommend__btn" href="#">Посмотреть все меню</a>
+        <a class="recommend__btn" href="menu.html">Посмотреть все меню</a>
       </section>
       <section class="block">
         <div class="block__wrapper">
@@ -172,7 +170,7 @@
               Здесь время замедляет свой ход и практически останавливается, предоставляя возможность насладится моментом и переосмыслить сущность бытия. Спокойствие и безмятежность это то, что выгодно отличает кафе «Колхети» от прочих заведений быстрого питания.
             </p>
           </div>
-          <form class="callback__form form" action="" method="post">
+          <form class="callback__form form" id="call" action="" method="post">
             <fieldset class="form__fieldset">
               <legend class="form__title">Забронировать стол</legend>
               <p class="form__text">Заполните форму и мы перезвоним Вам для уточнения информации</p>
@@ -209,13 +207,13 @@
         <nav class="footer__nav">
           <ul class="footer__nav-list">
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="">Главная</a>
+              <a class="footer__nav-link">О таверне</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="">Меню</a>
+              <a class="footer__nav-link" href="menu.html">Меню</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="">Контакты</a>
+              <a class="footer__nav-link" href="contacts.html">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -237,6 +235,6 @@
     </footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/script.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

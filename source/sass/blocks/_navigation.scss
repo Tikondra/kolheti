@@ -108,3 +108,20 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .navigation__btn {
+    display: none;
+  }
+
+  .navigation__list {
+    visibility: visible;
+    position: static;
+    justify-content: flex-start;
+    background-image: none;
+
+    li {
+      margin: 30px 20px 0;
+    }
+  }
+}
