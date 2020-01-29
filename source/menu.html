@@ -53,9 +53,21 @@
         <h1 class="menu__title">Меню</h1>
         <nav class="menu__nav">
           <ul class="menu__list">
-            <li class="menu__item">Первые блюда</li>
-            <li class="menu__item menu__item--active">Горячие блюда</li>
-            <li class="menu__item">Блюда из свинины</li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--active scroll-to" href="#first">
+                Первые блюда
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link scroll-to" href="#second">
+                Горячие блюда
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link scroll-to" href="#pork">
+                Блюда из свинины
+              </a>
+            </li>
             <li class="menu__item">Блюда из птицы</li>
             <li class="menu__item">Блюда на углях</li>
             <li class="menu__item">Салаты</li>
@@ -70,7 +82,94 @@
         </nav>
       </section>
       <section class="catalog">
-        <h2 class="catalog__title">Горячие блюда</h2>
+        <h2 class="catalog__title" id="first">Первые блюда</h2>
+        <ul class="catalog__list">
+          <li class="catalog__card card card--first">
+            <picture>
+              <source srcset="img/card1.webp" type="image/webp">
+              <img srcset="img/card1.jpg" width="" height="" alt="">
+            </picture>
+            <div class="card__content">
+              <h3 class="card__title">Хинкал тонкий</h3>
+              <p class="card__sostav">Состав:</p>
+              <p class="card__ingridients">Отварная телятина с соусами и галушками</p>
+              <p class="card__price">Цена: <span class="recommend__card-price--span">300 р</span></p>
+            </div>
+          </li>
+          <li class="catalog__card card card--second">
+            <picture>
+              <source srcset="img/card2.webp" type="image/webp">
+              <img srcset="img/card2.jpg" width="" height="" alt="">
+            </picture>
+            <div class="card__content">
+              <h3 class="card__title">Говядина/Баранина в сливочном соусе</h3>
+              <p class="card__sostav">Состав:</p>
+              <p class="card__ingridients">Отварная телятина с соусами и галушками</p>
+              <p class="card__price">Цена: <span class="recommend__card-price--span">300 р</span></p>
+            </div>
+          </li>
+          <li class="catalog__card card card--pork">
+            <picture>
+              <source srcset="img/card3.webp" type="image/webp">
+              <img srcset="img/card3.jpg" width="" height="" alt="">
+            </picture>
+            <div class="card__content">
+              <h3 class="card__title">Свинина с овощами</h3>
+              <p class="card__sostav">Состав:</p>
+              <p class="card__ingridients">мясо, болгарский, помидоры, картофель, зелень</p>
+              <p class="card__price">Цена: <span class="recommend__card-price--span">300 р</span></p>
+            </div>
+          </li>
+          <li class="catalog__card card card--bird">
+            <picture>
+              <source srcset="img/card4.webp" type="image/webp">
+              <img srcset="img/card4.jpg" width="" height="" alt="">
+            </picture>
+            <div class="card__content">
+              <h3 class="card__title">Оджахури на кеци</h3>
+              <p class="card__sostav">Состав:</p>
+              <p class="card__ingridients">Мясо, помидоры, картофель, зелень</p>
+              <p class="card__price">Цена: <span class="recommend__card-price--span">300 р</span></p>
+            </div>
+          </li>
+          <li class="catalog__card card card--coals">
+            <picture>
+              <source srcset="img/card1.webp" type="image/webp">
+              <img srcset="img/card1.jpg" width="" height="" alt="">
+            </picture>
+            <div class="card__content">
+              <h3 class="card__title">Хинкал тонкий</h3>
+              <p class="card__sostav">Состав:</p>
+              <p class="card__ingridients">Отварная телятина с соусами и галушками</p>
+              <p class="card__price">Цена: <span class="recommend__card-price--span">300 р</span></p>
+            </div>
+          </li>
+          <li class="catalog__card card card--salad">
+            <picture>
+              <source srcset="img/card2.webp" type="image/webp">
+              <img srcset="img/card2.jpg" width="" height="" alt="">
+            </picture>
+            <div class="card__content">
+              <h3 class="card__title">Говядина/Баранина в сливочном соусе</h3>
+              <p class="card__sostav">Состав:</p>
+              <p class="card__ingridients">Отварная телятина с соусами и галушками</p>
+              <p class="card__price">Цена: <span class="recommend__card-price--span">300 р</span></p>
+            </div>
+          </li>
+          <li class="catalog__card card card--bakery">
+            <picture>
+              <source srcset="img/card3.webp" type="image/webp">
+              <img srcset="img/card3.jpg" width="" height="" alt="">
+            </picture>
+            <div class="card__content">
+              <h3 class="card__title">Свинина с овощами</h3>
+              <p class="card__sostav">Состав:</p>
+              <p class="card__ingridients">мясо, болгарский, помидоры, картофель, зелень</p>
+              <p class="card__price">Цена: <span class="recommend__card-price--span">300 р</span></p>
+            </div>
+          </li>
+        </ul>
+        <h2 class="catalog__title" id="second">Горячие блюда</h2>
         <ul class="catalog__list">
           <li class="catalog__card card card--first">
             <picture>
@@ -180,7 +279,34 @@
               <p class="card__price">Цена: <span class="recommend__card-price--span">300 р</span></p>
             </div>
           </li>
-          <li class="catalog__card card card--colddtrink">
+        </ul>
+        <h2 class="catalog__title" id="pork">Блюда из свинины</h2>
+        <ul class="catalog__list">
+          <li class="catalog__card card card--first">
+            <picture>
+              <source srcset="img/card1.webp" type="image/webp">
+              <img srcset="img/card1.jpg" width="" height="" alt="">
+            </picture>
+            <div class="card__content">
+              <h3 class="card__title">Хинкал тонкий</h3>
+              <p class="card__sostav">Состав:</p>
+              <p class="card__ingridients">Отварная телятина с соусами и галушками</p>
+              <p class="card__price">Цена: <span class="recommend__card-price--span">300 р</span></p>
+            </div>
+          </li>
+          <li class="catalog__card card card--second">
+            <picture>
+              <source srcset="img/card2.webp" type="image/webp">
+              <img srcset="img/card2.jpg" width="" height="" alt="">
+            </picture>
+            <div class="card__content">
+              <h3 class="card__title">Говядина/Баранина в сливочном соусе</h3>
+              <p class="card__sostav">Состав:</p>
+              <p class="card__ingridients">Отварная телятина с соусами и галушками</p>
+              <p class="card__price">Цена: <span class="recommend__card-price--span">300 р</span></p>
+            </div>
+          </li>
+          <li class="catalog__card card card--pork">
             <picture>
               <source srcset="img/card3.webp" type="image/webp">
               <img srcset="img/card3.jpg" width="" height="" alt="">
@@ -192,7 +318,7 @@
               <p class="card__price">Цена: <span class="recommend__card-price--span">300 р</span></p>
             </div>
           </li>
-          <li class="catalog__card card card--first card--pork">
+          <li class="catalog__card card card--bird">
             <picture>
               <source srcset="img/card4.webp" type="image/webp">
               <img srcset="img/card4.jpg" width="" height="" alt="">
@@ -201,6 +327,42 @@
               <h3 class="card__title">Оджахури на кеци</h3>
               <p class="card__sostav">Состав:</p>
               <p class="card__ingridients">Мясо, помидоры, картофель, зелень</p>
+              <p class="card__price">Цена: <span class="recommend__card-price--span">300 р</span></p>
+            </div>
+          </li>
+          <li class="catalog__card card card--coals">
+            <picture>
+              <source srcset="img/card1.webp" type="image/webp">
+              <img srcset="img/card1.jpg" width="" height="" alt="">
+            </picture>
+            <div class="card__content">
+              <h3 class="card__title">Хинкал тонкий</h3>
+              <p class="card__sostav">Состав:</p>
+              <p class="card__ingridients">Отварная телятина с соусами и галушками</p>
+              <p class="card__price">Цена: <span class="recommend__card-price--span">300 р</span></p>
+            </div>
+          </li>
+          <li class="catalog__card card card--salad">
+            <picture>
+              <source srcset="img/card2.webp" type="image/webp">
+              <img srcset="img/card2.jpg" width="" height="" alt="">
+            </picture>
+            <div class="card__content">
+              <h3 class="card__title">Говядина/Баранина в сливочном соусе</h3>
+              <p class="card__sostav">Состав:</p>
+              <p class="card__ingridients">Отварная телятина с соусами и галушками</p>
+              <p class="card__price">Цена: <span class="recommend__card-price--span">300 р</span></p>
+            </div>
+          </li>
+          <li class="catalog__card card card--bakery">
+            <picture>
+              <source srcset="img/card3.webp" type="image/webp">
+              <img srcset="img/card3.jpg" width="" height="" alt="">
+            </picture>
+            <div class="card__content">
+              <h3 class="card__title">Свинина с овощами</h3>
+              <p class="card__sostav">Состав:</p>
+              <p class="card__ingridients">мясо, болгарский, помидоры, картофель, зелень</p>
               <p class="card__price">Цена: <span class="recommend__card-price--span">300 р</span></p>
             </div>
           </li>

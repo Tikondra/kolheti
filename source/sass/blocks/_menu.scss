@@ -1,4 +1,6 @@
 .menu {
+  position: fixed;
+  width: 100%;
   padding: 10px;
   padding-top: 110px;
   color: #ffffff;
@@ -25,7 +27,13 @@
   margin: 2px 12px;
   font-size: 14px;
   font-weight: 700;
-  cursor: pointer;
+
+
+}
+
+.menu__link {
+  color: #ffffff;
+  text-decoration: none;
 
   &--active,
   &:hover {
