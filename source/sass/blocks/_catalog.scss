@@ -42,6 +42,10 @@
 @media (min-width: 1024px) {
   .catalog {
     padding-top: 190px;
+
+    &--barbecue {
+      padding-top: 60px;
+    }
   }
 
   .catalog__list--barbecue {
@@ -51,7 +55,7 @@
   .catalog__title {
 
     &--barbecue {
-      padding: 70px 0;
+      padding: 70px 0 30px;
       font-size: 50px;
     }
   }
