@@ -1,5 +1,5 @@
 .catalog {
-  padding-top: 350px;
+  padding-top: 270px;
 
   &--barbecue {
     padding: 95px 0 0;
@@ -12,8 +12,9 @@
 }
 
 .catalog__title {
+  margin-bottom: 0;
   font-family: "BebasNeue", "Tahoma", sans-serif;
-  font-size: 50px;
+  font-size: 46px;
   font-weight: 500;
   line-height: 52px;
   text-align: center;
@@ -39,6 +40,10 @@
 }
 
 @media (min-width: 1024px) {
+  .catalog {
+    padding-top: 190px;
+  }
+
   .catalog__list--barbecue {
     padding: 50px 20px;
   }

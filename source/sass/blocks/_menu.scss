@@ -26,9 +26,7 @@
 .menu__item {
   margin: 2px 12px;
   font-size: 14px;
-  font-weight: 700;
-
-
+  font-weight: 500;
 }
 
 .menu__link {
@@ -43,7 +41,7 @@
 
 @media (min-width: 768px) {
   .menu {
-
+    padding: 130px 10px 10px;
   }
 
   .menu__title {
@@ -60,7 +58,7 @@
 
 @media (min-width: 1024px) {
   .menu {
-    padding: 115px 20px 40px;
+    padding: 130px 20px 15px;
     background-image: url("../img/menu-back2.jpg");
   }
 
@@ -71,12 +69,12 @@
 
   .menu__list {
     margin: auto;
-    max-width: 940px;
+    max-width: 1000px;
   }
 
   .menu__item {
-    margin: 3px 15px;
-    font-size: 20px;
-    line-height: 30px;
+    margin: 3px 10px;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
