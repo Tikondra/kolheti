@@ -1,5 +1,5 @@
 .catalog {
-  padding-top: 270px;
+  padding-top: 125px;
 
   &--barbecue {
     padding: 95px 0 0;
@@ -31,6 +31,10 @@
 }
 
 @media (min-width: 768px) {
+  .catalog {
+    padding-top: 210px;
+  }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;

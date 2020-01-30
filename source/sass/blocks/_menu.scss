@@ -19,12 +19,13 @@
 .menu__list {
   @include list;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
 
 .menu__item {
-  margin: 2px 12px;
+  margin: 2px 8px;
   font-size: 14px;
   font-weight: 500;
 }
@@ -42,6 +43,11 @@
 @media (min-width: 768px) {
   .menu {
     padding: 130px 10px 10px;
+  }
+
+  .menu__list {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .menu__title {
