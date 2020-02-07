@@ -35,7 +35,6 @@
 
 .bbq__btn {
   position: relative;
-  max-width: 305px;
   margin: auto auto 0;
   background-color: transparent;
   border: none;
@@ -45,6 +44,7 @@
   font-weight: 500;
   text-transform: uppercase;
   outline: none;
+  cursor: pointer;
 
   &::before {
     content: "";
