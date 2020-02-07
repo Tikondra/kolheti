@@ -1,9 +1,5 @@
 .catalog {
   padding-top: 125px;
-
-  &--barbecue {
-    padding: 95px 0 0;
-  }
 }
 
 .catalog__list {
@@ -18,16 +14,6 @@
   font-weight: 500;
   line-height: 52px;
   text-align: center;
-
-  &--barbecue {
-    padding: 30px 0;
-    margin: 0;
-    font-size: 40px;
-    color: #ffffff;
-    background-image: url("../img/menu-back2.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom center;
-  }
 }
 
 @media (min-width: 768px) {
@@ -46,21 +32,5 @@
 @media (min-width: 1024px) {
   .catalog {
     padding-top: 190px;
-
-    &--barbecue {
-      padding-top: 60px;
-    }
-  }
-
-  .catalog__list--barbecue {
-    padding: 50px 20px;
-  }
-
-  .catalog__title {
-
-    &--barbecue {
-      padding: 70px 0 30px;
-      font-size: 50px;
-    }
   }
 }
