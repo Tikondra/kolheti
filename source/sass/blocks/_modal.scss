@@ -1,0 +1,31 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -141px;
+  margin-left: -160px;
+  padding: 10px;
+  max-width: 320px;
+  background-image: url("../img/menu-back2.jpg");
+  background-position: center;
+  border: 5px solid #607d8b;
+  color: #fff;
+
+  &--show {
+    display: block;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  background-image: url("../img/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}

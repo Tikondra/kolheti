@@ -55,10 +55,9 @@ $(document).ready(function(){
   $('.form__input--js').inputmask("+7 (999) 999-99-99");
 });
 
-function validationForm () {
-  var form = document.querySelector('.form');
-  var phone = form.querySelector('.form__input--js');
+function validationForm (form) {
   var submitBtn = form.querySelector('.form__btn');
+  var phone = form.querySelector('.form__input--js');
 
   var postForm = function () {
     form.reset();
@@ -67,33 +66,61 @@ function validationForm () {
   var creatSuccess = function () {
     submitBtn.textContent = 'Сообщение отправлено';
     setTimeout(function () {
-      submitBtn.textContent = 'Отправить'
-    }, 2700);
+      submitBtn.textContent = 'Отправить';
+      if (document.querySelector('.modal')) {
+        document.querySelector('.modal').classList.remove('modal--show');
+      }
+    }, 2000);
+
   };
   var save = function (data) {
     var xhr = new XMLHttpRequest();
     xhr.open('POST', 'call.php');
     xhr.send(data);
   };
-
-  var onValidationForm = function () {
+  var onValidationForm = function (evt) {
     var regExp = /^\+7\s\(\d{3}\)\s\d{3}\-\d{2}\-\d{2}$/;
-
-    var tel = phone.value;
+    var tel = evt.target.value;
     var valid = regExp.test(tel);
     if (!valid) {
-      phone.setCustomValidity('Некоректный номер');
+      evt.target.setCustomValidity('Некоректный номер');
     } else {
-      phone.setCustomValidity('');
+      evt.target.setCustomValidity('');
     }
   };
-  phone.addEventListener('blur', onValidationForm)
+
+  phone.addEventListener('blur', onValidationForm);
   form.addEventListener('submit', function (evt) {
     evt.preventDefault();
     save(new FormData(form));
     postForm();
   });
 }
+
+function modal () {
+  var cardBtn = document.querySelectorAll('.card__btn');
+  var openBtn = document.querySelector('.bbq__btn');
+  var modal = document.querySelector('.modal');
+  var form = modal.querySelector('.modal__form');
+  var close = modal.querySelector('.modal__close');
+  cardBtn.forEach(function(item) {
+    item.addEventListener('click', function () {
+      modal.classList.add('modal--show');
+    });
+  });
+  openBtn.addEventListener('click', function () {
+    modal.classList.add('modal--show');
+  })
+  close.addEventListener('click', function () {
+    modal.classList.remove('modal--show');
+  });
+  validationForm(form);
+};
+
+
 if (document.querySelector('.form')) {
-  validationForm();
+  validationForm(document.querySelector('.form'));
+}
+if (document.querySelector('.modal')) {
+  modal();
 }

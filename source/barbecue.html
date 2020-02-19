@@ -34,16 +34,16 @@
           </button>
           <ul class="navigation__list">
             <li>
-              <a href="index.html">О таверне</a>
+              <a>Доставка шашлыка</a>
             </li>
             <li>
               <a href="menu.html">Кухня</a>
             </li>
             <li>
-              <a href="contacts.html">Контакты</a>
+              <a href="index.html">О таверне</a>
             </li>
             <li>
-              <a>Доставка шашлыка</a>
+              <a href="contacts.html">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -222,7 +222,7 @@
               </label>
               <label>
                 <span class="visually-hidden">Ваш телефон</span>
-                <input class="form__input form__input--js" type="tel" name="tel" placeholder="Ваш телефон" required>
+                <input class="form__input form__input--js" type="tel" name="phone" placeholder="Ваш телефон" required>
               </label>
               <button class="form__btn btn" type="submit">Отправить</button>
               <label class="form__privacy">
@@ -283,6 +283,26 @@
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <form class="modal__form" action="" method="post">
+        <button class="modal__close" type="button" aria-label="Закрыть"></button>
+        <label>
+          <span class="visually-hidden">Ваше имя</span>
+          <input class="form__input" type="text" name="name" placeholder="Ваше имя" required>
+        </label>
+        <label>
+          <span class="visually-hidden">Ваш телефон</span>
+          <input class="form__input form__input--js" type="tel" name="phone" placeholder="Ваш телефон" required>
+        </label>
+        <button class="form__btn btn" type="submit">Отправить</button>
+        <label class="form__privacy">
+          <input type="checkbox" name="privacy" checked disabled>
+          <span>
+            Я согласен с Политикой конфиденциальности и даю Согласие на обработку персональных данных
+          </span>
+        </label>
+      </form>
+    </div>
     <template id="card"> <!-- шаблон карточки блюда -->
       <li class="catalog__card card">
         <picture>
