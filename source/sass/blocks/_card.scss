@@ -1,6 +1,6 @@
 .card {
   max-width: 270px;
-  margin: 0 10px 20px;
+  margin: 0 auto 20px;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(197, 233, 237);
   border-radius: 10px;
@@ -71,7 +71,7 @@
 
 @media (min-width: 768px) {
   .card {
-    min-height: 435px;
+    margin: 0 10px 20px;
   }
 
   .card__content {

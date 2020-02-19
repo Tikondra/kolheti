@@ -66,6 +66,10 @@
   .menu {
     padding: 130px 20px 15px;
     background-image: url("../img/menu-back2.jpg");
+    background-repeat: repeat;
+    width: 250px;
+    height: 100%;
+    right: 0;
   }
 
   .menu__title {
@@ -76,10 +80,11 @@
   .menu__list {
     margin: auto;
     max-width: 1000px;
+    display: block;
   }
 
   .menu__item {
-    margin: 3px 10px;
+    margin: 10px;
     font-size: 18px;
     line-height: 24px;
   }
