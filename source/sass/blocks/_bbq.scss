@@ -1,26 +1,28 @@
 .bbq {
-  padding: 95px 0 0;
+  padding: 60px 0 0;
 }
 
 .bbq__title-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 730px;
-  padding-bottom: 60px;
-  background-image: url("../img/bq-back.jpg");
+  min-height: 500px;
+  background-image: url("../img/new-banner.png");
   background-repeat: no-repeat;
   background-position: bottom center;
 }
 
 .bbq__title {
-  padding: 50px 10px 0;
+  padding: 20px;
   margin: 0;
+  margin-top: 100px;
   font-family: "BebasNeue", "Tahoma", sans-serif;
   font-size: 40px;
   color: #ffffff;
   font-weight: 700;
   line-height: 56px;
   text-align: center;
+  background-color: #0000008a;
+  backdrop-filter: blur(1px);
 
   span {
     font-weight: 500;
@@ -45,6 +47,14 @@
   text-transform: uppercase;
   outline: none;
   cursor: pointer;
+
+  h2 {
+    font-weight: 700;
+    color: #141b22;
+    margin: 0;
+    display: inline;
+    font-size: 56px;
+  }
 
   span {
     font-weight: 700;
@@ -81,6 +91,19 @@
   }
 }
 
+.bbq-delivery {
+  margin: auto;
+  margin-bottom: 30px;
+  max-width: 300px;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+
+  span {
+    font-weight: 700;
+  }
+}
+
 @media (min-width: 768px) {
   .bbq__title-wrapper {
     padding-bottom: 30px;
@@ -98,6 +121,10 @@
     font-size: 56px;
     line-height: 60px;
   }
+
+  .bbq-delivery {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -106,36 +133,16 @@
   }
 
   .bbq__title {
-    position: relative;
-    max-width: 1170px;
     width: 100%;
-    margin: 0 auto;
-    padding: 50px 0 30px;
-    font-size: 50px;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 80px;
-      left: 40px;
-      width: 350px;
-      height: 350px;
-      background-image: url("../img/bbq-img1.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-
-    &::after {
-      top: 60px;
-      left: auto;
-      right: 40px;
-      background-image: url("../img/bbq-img2.png");
-    }
+    padding: 30px;
+    font-size: 60px;
+    line-height: 70px;
+    margin-top: 130px;
+    background-color: #21212199;
+    backdrop-filter: blur(3px);
   }
 
-  .bbq__list {
-    padding: 50px 20px;
+  .bbq__title-wrapper {
+    min-height: 730px;
   }
 }

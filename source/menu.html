@@ -27,7 +27,7 @@
             <img class="header__logo" src="img/logo.png" width="111" height="111" alt="Колхети">
           </picture>
         </a>
-        <p class="header__adress">г. Астрахань, ул.&nbsp;Мечникова,&nbsp;28</p>
+        <p class="header__adress">г. Астрахань, ул.&nbsp;Лычманова,&nbsp;42/28</p>
         <a class="header__tel" href="tel:89086116364">8 (908) 611-63-64</a>
         <nav class="header__nav navigation">
           <button class="navigation__btn" type="button">
@@ -35,13 +35,13 @@
           </button>
           <ul class="navigation__list">
             <li>
-              <a href="barbecue.html">Доставка шашлыка</a>
+              <a href="index.html">Доставка шашлыка</a>
             </li>
             <li>
               <a>Кухня</a>
             </li>
             <li>
-              <a href="index.html">О таверне</a>
+              <a href="about.html">О таверне</a>
             </li>
             <li>
               <a href="contacts.html">Контакты</a>
@@ -52,7 +52,7 @@
     </header>
     <main>
       <section class="menu">
-        <!-- <h1 class="menu__title">Меню</h1> -->
+        <h1 class="menu__title">Меню</h1>
         <nav class="menu__nav">
           <ul class="menu__list">
             <li class="menu__item">
@@ -124,6 +124,10 @@
         </nav>
       </section>
       <section class="catalog">
+        <ul class="catalog__add">
+          <li>Любое из этих блюд мы доставим вам <span>БЕСПЛАТНО</span>.</li>
+          <li>Также накрываем столы под любое мероприятие по вашему адресу, <span>НЕДОРОГО</span></li>
+        </ul>
         <h2 class="catalog__title" id="first">Первые блюда</h2>
         <ul class="catalog__list">
           <li class="catalog__card card card--first">
@@ -1011,18 +1015,14 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <picture>
-          <source type="image/webp" srcset="img/logo.webp">
-          <img class="footer__logo" src="img/logo.png" width="111" height="111" alt="Колхети">
-        </picture>
         <div class="footer__contacts">
-          <p class="footer__adress">г. Астрахань, ул.&nbsp;Мечникова,&nbsp;28</p>
+          <p class="footer__adress">г. Астрахань, ул.&nbsp;Лычманова,&nbsp;42/28</p>
           <a class="footer__tel" href="tel:89086116364">8 (908) 611-63-64</a>
         </div>
         <nav class="footer__nav">
           <ul class="footer__nav-list">
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="index.html">О таверне</a>
+              <a class="footer__nav-link" href="about.html">О таверне</a>
             </li>
             <li class="footer__nav-item">
               <a class="footer__nav-link">Кухня</a>
@@ -1031,7 +1031,7 @@
               <a class="footer__nav-link" href="contacts.html">Контакты</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="barbecue.html">Доставка шашлыка</a>
+              <a class="footer__nav-link" href="index.html">Доставка шашлыка</a>
             </li>
           </ul>
         </nav>
@@ -1056,25 +1056,10 @@
         </div>
       </div>
       <div class="footer__copyright--bz">
-        <p>© 2020 Все права защищены</p>
         <div class="footer__copyright-logo"></div>
         <a href="http://bzcekh.ru/"></a>
       </div>
     </footer>
-    <template id="card"> <!-- шаблон карточки блюда -->
-      <li class="catalog__card card">
-        <picture>
-          <source srcset="img/card4.webp" type="image/webp">
-          <img src="img/card4.jpg" width="" height="" alt="">
-        </picture>
-        <div class="card__content">
-          <h3 class="card__title">Оджахури на кеци</h3>
-          <p class="card__sostav">Состав:</p>
-          <p class="card__ingridients">Мясо, помидоры, картофель, зелень</p>
-          <p class="card__price">Цена: <span class="recommend__card-price--span">300 р</span></p>
-        </div>
-      </li>
-    </template>
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>

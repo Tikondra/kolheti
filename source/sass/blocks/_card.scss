@@ -34,6 +34,7 @@
 }
 
 .card__price {
+  display: none;
   margin-bottom: 0;
 
   &--span {
@@ -43,7 +44,7 @@
 }
 
 .card__btn {
-  display: block;
+  display: none;
   outline: none;
   padding: 20px 40px;
   margin: 20px auto 0;
@@ -69,6 +70,17 @@
   }
 }
 
+.bbq__list {
+  .card__price {
+    display: block;
+  }
+
+  .card__ingridients,
+  .card__sostav {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   .card {
     margin: 0 10px 20px;
@@ -84,5 +96,11 @@
 
   .card__ingridients {
     min-height: 72px;
+  }
+
+  .bbq__list {
+    .card__ingridients {
+      min-height: 0;
+    }
   }
 }

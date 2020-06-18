@@ -121,6 +121,6 @@ function modal () {
 if (document.querySelector('.form')) {
   validationForm(document.querySelector('.form'));
 }
-if (document.querySelector('.modal')) {
-  modal();
-}
+// if (document.querySelector('.modal')) {
+//   modal();
+// }

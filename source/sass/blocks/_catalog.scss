@@ -16,6 +16,16 @@
   text-align: center;
 }
 
+.catalog__add {
+  max-width: 920px;
+  margin: auto;
+  padding: 20px;
+
+  span {
+    color: #ffca40;
+  }
+}
+
 @media (min-width: 768px) {
   .catalog {
     padding-top: 210px;
